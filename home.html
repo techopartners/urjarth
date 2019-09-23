@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home | Billing Audit System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Billing Audit System</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          <li><a href="editprofile.html"><span class="glyphicon glyphicon-edit"></span> Edit Profile</a></li>
+          <li><a href="billinganalysis.html"><span class="glyphicon glyphicon-stats"></span> Billing Analysis</a></li>
+          <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="customer-record">
+    <h1 class="font-weight-normal">Welcome Mr. Devendra !!</h1>
+    <a class="billing-record" href="addbillingrecord.html">Add Billing Record</a>
+
+    <div class="">
+      <form class="form-customer-record">
+        <div class="form-customer-data">
+
+          <div class="form-group col-lg-4">
+            <label for="consumerNumber">Consumer Number:</label>
+            <input type="text" class="form-control" id="consumerNumber" placeholder="" required>
+          </div>
+          <div class="form-group col-lg-4">
+            <label for="pincode">Pincode:</label>
+            <input type="text" class="form-control" id="pincode" placeholder="" required>
+          </div>
+          <div class="form-group col-lg-4">
+            <label for="address">Address:</label>
+            <input type="text" class="form-control" id="address" placeholder="" required>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="contractDemand">* 50% of Contract Demand(KVA):</label>
+            <input type="text" class="form-control" id="contractDemand" placeholder="">
+          </div>
+
+          <div class="form-group col-lg-4">
+            <label for="connectedLoad">Connected Load (KW):</label>
+            <input type="text" class="form-control" id="connectedLoad" placeholder="">
+          </div>
+          <div class="form-group col-lg-4">
+            <label for="dateOfConnection">Date of Connection:</label>
+            <input type="text" class="form-control" id="dateOfConnection" placeholder="">
+          </div>
+
+          <div class="form-group col-lg-4">
+            <label for="supplyAt">Supply At:</label>
+            <input type="text" class="form-control" id="supplyAt" placeholder="">
+          </div>
+          <div class="form-group col-lg-4">
+            <label for="sanctionedDemand">Sanctioned Demand(KVA):</label>
+            <input type="text" class="form-control" id="sanctionedDemand" placeholder="">
+          </div>
+          <div class="form-group col-lg-4">
+            <label for="tarrif">Tariff:</label>
+            <input type="text" class="form-control" id="tarrif" placeholder="">
+          </div>
+
+          <div class="form-group col-lg-6">
+            <label for="sanctionedLoad">Sanctioned Load(KW):</label>
+            <input type="text" class="form-control" id="sanctionedLoad" placeholder="">
+          </div>
+          <div class="form-group col-lg-6">
+            <label for="meterNumber">Meter Number:</label>
+            <input type="text" class="form-control" id="meterNumber" placeholder="">
+          </div>
+
+        </div>
+        <button type="reset" class="btn btn-secondary"></button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="billing-details">
+    <h3>Billing Details</h3>
+    <p>View Last 12 uploaded billing details</p>
+    <div class="row">
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn" onclick=" relocate_home()">Sep 2019</button>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn" onclick=" relocate_home()">Aug 2019</button>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn" onclick=" relocate_home()">Jul 2019</button>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn" onclick=" relocate_home()">Jun 2019</button>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn" onclick=" relocate_home()">May 2019</button>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn">Apr 2019</button>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn">Mar 2019</button>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn">Feb 2019</button>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn">Jan 2019</button>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn">Dec 2018</button>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn">Nov 2018</button>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-3">
+        <button type="button" class="btn btn-dark butn">Oct 2018</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; Powered By: Urja Arth 2019</p>
+  </footer>
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>

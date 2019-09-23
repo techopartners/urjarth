@@ -1,0 +1,283 @@
+/********************* Common Styling across all pages *********************/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+/***************** styling for HTML elements ***************/
+
+body {
+  height: 100%;
+  font-family: "Poppins-Regular", Arial, sans-serif;
+  /* background-image: url('../images/energy.jpg'); */
+}
+
+/***************** Custom CSS classes ***************/
+.footer {
+  margin-top: 20px;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer p {
+  padding-top: 15px;
+}
+
+/********************* CSS style for Login page *********************/
+.login {
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  height: 500px;
+  margin: auto;
+} /* The same "login" class is used in Forgot Password page */
+
+.login h1 {
+  font-size: 39px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+} /* The same class is used in Forgot Password page */
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.checkbox {
+  padding-left: 10px;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid red;
+}
+
+.label-input100 {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+  padding-left: 7px;
+}
+
+.input100 {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 55px;
+  background: transparent;
+  padding: 0 7px 0 43px;
+}
+
+.btn-reset {
+  margin-top: 20px;
+  margin-left: 10px;
+} /* The same class is used in Forgot Password page */
+
+.login-text {
+  padding-top: 15px;
+  font-family: "Poppins-Regular";
+  font-size: 11px;
+}
+
+/******************* CSS style for Signup (User Registration) page ********************/
+.register {
+  background-color: lightgrey;
+  width: 50%;
+  margin: 0 auto;
+  height: 100%;
+} /* The same class is used in Edit Profile page */
+
+.register h1, p {
+  text-align: center;
+}
+
+.form-register {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 0px;
+  padding-bottom: 25px;
+  margin: 0 auto 0 auto;
+} /* The same class is used in Edit Profile page */
+
+
+
+/********************* CSS style for Forgot Password page *********************/
+
+/********************* CSS style for Edit Profile page *********************/
+.form-reg-button {
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+} /* The same class is used in Home page */
+
+/********************* CSS style for Home page *********************/
+.customer-record {
+  background-color: lightgrey;
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+} /* The same class is used in View Customer Bill page */
+
+.billing-record {
+  background-color: #1f73b7;;
+  color: white;
+  padding: 10px 15px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+.billing-record:hover {
+  background-color: #f44336;
+  color: white;
+  text-decoration: none;
+}
+
+.form-customer-record {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 25px;
+  margin: 0 auto 0 auto;
+}
+
+.form-customer-data {
+	margin-top: 15px;
+}
+
+.billing-details {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.billing-details p {
+  text-align: left;
+}
+
+.butn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.butn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/********************* CSS style for Billing Analysis page *********************/
+.billing-analysis {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 95%;
+
+}
+
+.billing-analysis-table {
+	text-align: center;
+}
+
+.billing-analysis-table th {
+	text-align: center;
+}
+
+.billing-analysis-title {
+
+}
+/********************* CSS style for Add Billing Record page *********************/
+
+/********************* CSS style for View Customer Bill page *********************/
+.billing-record {
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+/***********************************************************************/
+
+/* .add-billing-button {
+  margin-left: 35px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+} */

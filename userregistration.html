@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>User Registration | Billing Audit System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Billing Audit System</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="register">
+    <h1 class="font-weight-normal">New User Registration</h1>
+    <p>Please enter your personal information</p>
+    <div class="" >
+      <form class="form-register" >
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputUserName">* Username:</label>
+            <input type="text" class="form-control" id="inputUserName" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="newPassword">* New Password:</label>
+            <input type="text" class="form-control" id="newPassword" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="confirmPassword">* Confirm Password:</label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="">
+          </div>
+          <div class="form-group col-md-12">
+            <label for="passwordHint">* Password Hint:</label>
+            <input type="text" class="form-control" id="passwordHint" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="firstName">* First Name:</label>
+            <input type="text" class="form-control" id="firstName" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lastName">* Last Name:</label>
+            <input type="text" class="form-control" id="lastName" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">* Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="phoneNumber">* Phone Number:</label>
+            <input type="text" class="form-control" id="phoneNumber" placeholder="">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary form-reg-button">Submit</button>
+        <button type="submit" class="btn btn-secondary form-reg-button">Cancel</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <p>&copy; Powered By: Urja Arth 2019</p>
+  </footer>
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
